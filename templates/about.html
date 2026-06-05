@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="about-page">
+  <header class="article-header">
+    <h1>About</h1>
+  </header>
+
+  <div class="article-body">
+
+    <p>
+      <!-- REPLACE: One or two sentences — who you are, where you are, what you're doing.
+           Example: I'm Kazim Sherazee, based in Vancouver. I read and write about philosophy,
+           build tools, and look for work at the intersection of ideas and operations. -->
+    </p>
+
+    <h2>This site</h2>
+    <p>
+      <!-- REPLACE: Describe what the site is and how it works — the research notebook model,
+           the status badges, the idea of working in public. This is the place to explain
+           the intellectual philosophy behind it for a reader encountering it fresh. -->
+    </p>
+
+    <h2>Background</h2>
+    <p>
+      <!-- REPLACE: BA Honours PPE (Philosophy, Politics, Economics), UBC Okanagan, 2024.
+           Honours thesis on recognition theory and multiculturalism (Charles Taylor, Habermas, Kymlicka).
+           Current research: Hegel, Leibniz, genealogy and historicism, philosophy of AI.
+           Keep this honest and specific — not a CV recitation. -->
+    </p>
+
+    <h2>Work</h2>
+    <p>
+      <!-- REPLACE: What you do professionally and what you're looking for.
+           Mention that you build AI-integrated tools (link to projects).
+           Mention your interest in compliance, operations, policy.
+           Keep it brief — the services page has more detail. -->
+      I also build things. See <a href="{{ base_path }}/projects/">projects</a> for what I've made,
+      and <a href="{{ base_path }}/services/">services</a> if you're looking to work together.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      <!-- REPLACE: Your preferred contact method. -->
+      The best way to reach me is by email: <a href="mailto:kazimsherazee@gmail.com">kazimsherazee@gmail.com</a>.
+    </p>
+
+  </div>
+</article>
+{% endblock %}

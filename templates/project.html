@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<article>
+  <header class="article-header">
+    <h1>{{ title }}</h1>
+    <div class="article-meta">
+      <span class="article-meta__item">{{ status }}</span>
+      <span class="article-meta__item">{{ modified }}</span>
+    </div>
+    <p class="section-header__description">{{ description }}</p>
+  </header>
+
+  <div class="article-body">
+    {{ content }}
+
+    {{ related_essays }}
+    {{ related_reading }}
+  </div>
+</article>
+{% endblock %}

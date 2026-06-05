@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essays — Kazim</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script>
+    // Apply theme before render to prevent flash
+    (function(){
+      var t = localStorage.getItem('kazim-theme') ||
+              (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a href="/" class="site-title">Kazim</a>
+          <span class="site-subtitle">a public research notebook</span>
+        </div>
+        <nav class="site-nav">
+          <a href="/essays/">essays</a>
+          <a href="/reading/">reading</a>
+          <a href="/projects/">projects</a>
+          <a href="/changelog/">changelog</a>
+        </nav>
+      </div>
+    </header>
+
+    <button class="theme-toggle">dark mode</button>
+
+    <main>
+      <div class="section-header">
+  <h1>Essays</h1>
+  <p class="section-header__description"></p>
+</div>
+
+<ul class="content-list">
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/essays/philosophy-and-ai/">What Can Philosophy Say About Artificial Intelligence?</a></span>
+  <span class="content-list__meta"><span class="badge badge--seed">seed</span> <span class="badge badge--speculative">speculative</span> 2025-04-10</span>
+  <div class="content-list__description">Early notes on what a philosophical engagement with AI might look like — not from the ethics-first orientation that dominates the field, but from questions about reasoning, language, and the space of reasons.</div>
+</li>
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/essays/leibniz-incommensurables/">Leibniz and the Use of Incommensurables</a></span>
+  <span class="content-list__meta"><span class="badge badge--growing">growing</span> <span class="badge badge--tentative">tentative</span> 2025-03-22</span>
+  <div class="content-list__description">An exploration of how Leibniz's use of mathematical incommensurables informs and complicates his metaphysical system, particularly the relationship between the infinite and the actual.</div>
+</li>
+</ul>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Kazim Sherazee. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</span>
+      <span><a href="/oddities/">oddities &amp; rarities</a> · <a href="/changelog/">changelog</a></span>
+    </footer>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

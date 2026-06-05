@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<article>
+  <header class="article-header">
+    <h1>{{ title }}</h1>
+    <div class="article-meta">
+      {{ meta }}
+    </div>
+    {{ abstract }}
+    <div class="article-meta" style="margin-top: var(--space-sm);">
+      {{ tags }}
+      {{ project_tags }}
+    </div>
+  </header>
+
+  <div class="article-body">
+    {{ content }}
+  </div>
+</article>
+{% endblock %}

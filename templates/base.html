@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page_title }}</title>
+  <link rel="stylesheet" href="{{ base_path }}/static/css/style.css">
+  <script>
+    (function(){
+      var t = localStorage.getItem('kazim-theme') ||
+              (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a href="{{ base_path }}/" class="site-title">{{ site_title }}</a>
+          <span class="site-subtitle">{{ site_subtitle }}</span>
+        </div>
+        <nav class="site-nav">
+          <a href="{{ base_path }}/essays/">essays</a>
+          <a href="{{ base_path }}/reading/">reading</a>
+          <a href="{{ base_path }}/research/">research</a>
+          <a href="{{ base_path }}/projects/">projects</a>
+          <a href="{{ base_path }}/changelog/">changelog</a>
+          <span class="site-nav__divider"></span>
+          <a href="{{ base_path }}/services/" class="site-nav__services">services</a>
+        </nav>
+      </div>
+    </header>
+
+    <button class="theme-toggle" id="theme-toggle">dark mode</button>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; {{ year }} Kazim Sherazee. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</span>
+      <span>
+        <a href="{{ base_path }}/about/">about</a> ·
+        <a href="{{ base_path }}/oddities/">oddities &amp; rarities</a> ·
+        <a href="{{ base_path }}/changelog/">changelog</a>
+      </span>
+    </footer>
+  </div>
+
+  <script src="{{ base_path }}/static/js/main.js"></script>
+</body>
+</html>

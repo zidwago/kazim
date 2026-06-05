@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<article>
+  <header class="article-header">
+    <h1>{{ title }}</h1>
+    {{ reading_meta }}
+    <div class="article-meta">
+      {{ tags }}
+      {{ project_tags }}
+    </div>
+  </header>
+
+  <div class="article-body">
+    {{ content }}
+  </div>
+</article>
+{% endblock %}

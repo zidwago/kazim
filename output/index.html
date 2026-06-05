@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kazim</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script>
+    // Apply theme before render to prevent flash
+    (function(){
+      var t = localStorage.getItem('kazim-theme') ||
+              (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a href="/" class="site-title">Kazim</a>
+          <span class="site-subtitle">a public research notebook</span>
+        </div>
+        <nav class="site-nav">
+          <a href="/essays/">essays</a>
+          <a href="/reading/">reading</a>
+          <a href="/projects/">projects</a>
+          <a href="/changelog/">changelog</a>
+        </nav>
+      </div>
+    </header>
+
+    <button class="theme-toggle">dark mode</button>
+
+    <main>
+      <section class="home-section">
+  <h2 class="home-section__title">Currently</h2>
+  <p class="currently-text">
+    Working through Hegel's <em>Science of Logic</em> alongside Beiser's Routledge introduction. Beginning to survey the philosophy of AI literature — reading Müller, Sambrotta, and Amodei. Revisiting Leibniz's modal metaphysics and developing earlier work on incommensurables. Interested in how Pittsburgh-school philosophy of language might bear on questions about large language models.
+  </p>
+</section>
+
+<section class="home-section">
+  <h2 class="home-section__title">Active Research</h2>
+  <div class="project-card">
+  <div class="project-card__title"><a href="/projects/genealogy-historicism/">Genealogy & Historicism</a></div>
+  <div class="project-card__status"><span class="badge badge--active">active</span></div>
+  <div class="project-card__description">Developing a view on the relationship between philosophy and its history — working through genealogical method, historicism, and the question of whether and how the origins of beliefs bear on their justification.</div>
+</div>
+<div class="project-card">
+  <div class="project-card__title"><a href="/projects/hegel/">Hegel & 19th-Century Philosophy</a></div>
+  <div class="project-card__status"><span class="badge badge--active">active</span></div>
+  <div class="project-card__description">Deep reading of the Science of Logic and secondary literature, expanding into Marx, Kant, and the broader 19th-century philosophical context.</div>
+</div>
+<div class="project-card">
+  <div class="project-card__title"><a href="/projects/leibniz/">Leibniz</a></div>
+  <div class="project-card__status"><span class="badge badge--active">active</span></div>
+  <div class="project-card__description">Continuing engagement with Leibniz's primary texts and secondary literature, developing original interpretive work on incommensurables and modal metaphysics.</div>
+</div>
+<div class="project-card">
+  <div class="project-card__title"><a href="/projects/philosophy-of-ai/">Philosophy of AI</a></div>
+  <div class="project-card__status"><span class="badge badge--active">active</span></div>
+  <div class="project-card__description">Surveying the philosophy of artificial intelligence literature and working through foundational papers, with an eye toward developing a philosophical perspective on large language models.</div>
+</div>
+
+</section>
+
+<section class="home-section">
+  <h2 class="home-section__title">Recent Writing</h2>
+  <ul class="content-list">
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/essays/philosophy-and-ai/">What Can Philosophy Say About Artificial Intelligence?</a></span>
+  <span class="content-list__meta"><span class="badge badge--seed">seed</span> <span class="badge badge--speculative">speculative</span> 2025-04-10</span>
+</li>
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/essays/leibniz-incommensurables/">Leibniz and the Use of Incommensurables</a></span>
+  <span class="content-list__meta"><span class="badge badge--growing">growing</span> <span class="badge badge--tentative">tentative</span> 2025-03-22</span>
+</li>
+</ul>
+</section>
+
+<section class="home-section">
+  <h2 class="home-section__title">Currently Reading</h2>
+  <ul class="content-list">
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/reading/hegel-science-of-logic/">Science of Logic</a> — G.W.F. Hegel</span>
+  <span class="content-list__meta">close reading · hegel</span>
+</li>
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/reading/sambrotta-llms-space-of-reasons/">LLMs and the Logical Space of Reasons</a> — Mirco Sambrotta</span>
+  <span class="content-list__meta">consulted · philosophy-of-ai</span>
+</li>
+</ul>
+</section>
+
+<section class="home-section">
+  <h2 class="home-section__title">Oddities &amp; Rarities</h2>
+  <div class="oddity-entry">
+  <blockquote>
+<p>Being about, if I am so happy as to obtain her consent, to enter into the marriage relation with the only woman I have ever known, with whom I would have entered into that state; &amp; the whole character of the marriage relation as constituted by law being such as both she and I entirely &amp; conscientiously disapprove, for this amongst other reasons, that it confers upon one of the parties to the contract, legal power &amp; control over the person, property, &amp; freedom of action of the other party, independent of her own wishes and will; I, having no means of legally divesting myself of these odious powers (as I most assuredly would do if an engagement to that effect could be made legally binding on me) feel it my duty to put on record a formal protest against the existing law of marriage, in so far as conferring such powers; and a solemn promise never in any case or under any circumstances to use them. And in the event of marriage between Mrs. Taylor and me I declare it to be my will and intention, &amp; the condition of the engagement between us, that she retains in all respects whatever the same absolute freedom of action, &amp; freedom of disposal of herself and of all that does or may at any time belong to her, as if no such marriage had taken place; and I absolutely disclaim &amp; repudiate all pretension to have acquired any rights whatever by virtue of such marriage. </p>
+<div class="blockquote-attribution">— John Stuart Mill, Declaration of Marriage, 1851</div>
+</blockquote>
+  
+</div>
+
+</section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Kazim Sherazee. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</span>
+      <span><a href="/oddities/">oddities &amp; rarities</a> · <a href="/changelog/">changelog</a></span>
+    </footer>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

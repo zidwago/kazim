@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="services-page">
+  <header class="article-header">
+    <h1>Services</h1>
+    <p class="services-intro">
+      <!-- REPLACE: One sentence positioning statement.
+           Example: I help small businesses and teams integrate AI tools into their workflows
+           and build custom web applications. -->
+    </p>
+  </header>
+
+  <div class="article-body">
+
+    <h2>What I do</h2>
+
+    <div class="services-list">
+      <div class="service-item">
+        <h3>AI implementation &amp; automation</h3>
+        <p>
+          <!-- REPLACE: Describe specifically — workflow automation, Claude API integrations,
+               document processing, custom tooling built around AI models. What kinds of
+               problems you solve. -->
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3>Web application development</h3>
+        <p>
+          <!-- REPLACE: Custom web apps, data dashboards, internal tools. Mention the stack
+               you're comfortable with: Python, JavaScript, Supabase, GitHub Pages, etc. -->
+        </p>
+      </div>
+    </div>
+
+    <h2>Proof of work</h2>
+    <p>Things I've built:</p>
+
+    {{ proof_of_work }}
+
+    <p>See the full <a href="{{ base_path }}/projects/">projects page</a> for more.</p>
+
+    <h2>Get in touch</h2>
+    <p>
+      <!-- REPLACE: How to engage. Include email. Mention any relevant context —
+           based in Vancouver, available for remote work, comfortable with short
+           scoped projects or longer engagements. -->
+      Email me at <a href="mailto:kazimsherazee@gmail.com">kazimsherazee@gmail.com</a>
+      with a brief description of what you need. I'll respond within a day or two.
+    </p>
+
+  </div>
+</article>
+{% endblock %}

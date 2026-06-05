@@ -1,0 +1,7 @@
+---
+title: "Mill on Marriage, 1851"
+topics: [mill, marriage, liberalism]
+---
+> Being about, if I am so happy as to obtain her consent, to enter into the marriage relation with the only woman I have ever known, with whom I would have entered into that state; & the whole character of the marriage relation as constituted by law being such as both she and I entirely & conscientiously disapprove, for this amongst other reasons, that it confers upon one of the parties to the contract, legal power & control over the person, property, & freedom of action of the other party, independent of her own wishes and will; I, having no means of legally divesting myself of these odious powers (as I most assuredly would do if an engagement to that effect could be made legally binding on me) feel it my duty to put on record a formal protest against the existing law of marriage, in so far as conferring such powers; and a solemn promise never in any case or under any circumstances to use them. And in the event of marriage between Mrs. Taylor and me I declare it to be my will and intention, & the condition of the engagement between us, that she retains in all respects whatever the same absolute freedom of action, & freedom of disposal of herself and of all that does or may at any time belong to her, as if no such marriage had taken place; and I absolutely disclaim & repudiate all pretension to have acquired any rights whatever by virtue of such marriage. 
+>
+> — John Stuart Mill, Declaration of Marriage, 1851

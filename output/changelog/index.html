@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelog — Kazim</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script>
+    // Apply theme before render to prevent flash
+    (function(){
+      var t = localStorage.getItem('kazim-theme') ||
+              (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a href="/" class="site-title">Kazim</a>
+          <span class="site-subtitle">a public research notebook</span>
+        </div>
+        <nav class="site-nav">
+          <a href="/essays/">essays</a>
+          <a href="/reading/">reading</a>
+          <a href="/projects/">projects</a>
+          <a href="/changelog/">changelog</a>
+        </nav>
+      </div>
+    </header>
+
+    <button class="theme-toggle">dark mode</button>
+
+    <main>
+      <div class="section-header">
+  <h1>Changelog</h1>
+  <p class="section-header__description">A log of substantive changes to the site — new essays, revisions, new reading logs, and structural updates.</p>
+</div>
+
+<div class="changelog-entries">
+  <div class="changelog-entry">
+    <span class="changelog-entry__date">2025-04-16</span>
+    <span class="changelog-entry__text">Site launched. Initial content: essays on Leibniz and philosophy of AI, reading logs, four research project pages, first oddities & rarities entries.</span>
+  </div>
+</div>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Kazim Sherazee. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</span>
+      <span><a href="/oddities/">oddities &amp; rarities</a> · <a href="/changelog/">changelog</a></span>
+    </footer>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

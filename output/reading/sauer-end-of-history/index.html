@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The End of History — Kazim</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script>
+    // Apply theme before render to prevent flash
+    (function(){
+      var t = localStorage.getItem('kazim-theme') ||
+              (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a href="/" class="site-title">Kazim</a>
+          <span class="site-subtitle">a public research notebook</span>
+        </div>
+        <nav class="site-nav">
+          <a href="/essays/">essays</a>
+          <a href="/reading/">reading</a>
+          <a href="/projects/">projects</a>
+          <a href="/changelog/">changelog</a>
+        </nav>
+      </div>
+    </header>
+
+    <button class="theme-toggle">dark mode</button>
+
+    <main>
+      <article>
+  <header class="article-header">
+    <h1>The End of History</h1>
+    <dl class="reading-meta">
+  <dt>author</dt><dd>Hanno Sauer</dd>
+  <dt>type</dt><dd>paper</dd>
+  <dt>engagement</dt><dd>read</dd>
+  <dt>reading status</dt><dd><span class="badge badge--completed">completed</span></dd>
+</dl>
+    <div class="article-meta">
+      <a class="tag" href="/tags/genealogy/">genealogy</a> <a class="tag" href="/tags/historicism/">historicism</a> <a class="tag" href="/tags/metaethics/">metaethics</a> <a class="tag" href="/tags/debunking-arguments/">debunking-arguments</a>
+      <a class="tag" href="/tags/genealogy-historicism/">genealogy-historicism</a>
+    </div>
+  </header>
+
+  <div class="article-body">
+    <h2 id="summary">Summary</h2>
+<p>Sauer argues against genealogical approaches in philosophy — the idea that tracing the historical origins of a belief or practice can tell us something about its justification. His view represents a challenge to the kind of historically-minded philosophy I&rsquo;m drawn to.</p>
+<h2 id="what-struck-me">What Struck Me</h2>
+<p>I was blown away by this paper even though (perhaps <em>because</em>) it represents a very different view from my own approach to philosophy. Sauer&rsquo;s core claim — that genealogy is either epistemically irrelevant or collapses into standard epistemic evaluation — is sharp and well-argued.</p>
+<p>The challenge for someone like me, who thinks the history of philosophy <em>matters</em> philosophically and not merely as antiquarian interest, is to articulate exactly <em>how</em> it matters in a way that survives Sauer&rsquo;s critique.</p>
+<h2 id="connections">Connections</h2>
+<ul>
+<li>This pairs naturally with Nietzsche&rsquo;s <em>Genealogy of Morality</em>, which I&rsquo;ve partially read and which represents the strongest case for genealogy as a philosophical method.</li>
+<li>Amia Srinivasan&rsquo;s &ldquo;Genealogy of Belief&rdquo; syllabus collects many of the key texts in this debate — I want to work through it systematically.</li>
+<li>Brandom&rsquo;s <em>Tales of the Mighty Dead</em> might offer resources here: his idea that engaging with the history of philosophy is itself a philosophical activity, not merely a historical one.</li>
+</ul>
+  </div>
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Kazim Sherazee. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</span>
+      <span><a href="/oddities/">oddities &amp; rarities</a> · <a href="/changelog/">changelog</a></span>
+    </footer>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

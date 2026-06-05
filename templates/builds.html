@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="build-page">
+  <header class="article-header">
+    <h1>{{ title }}</h1>
+    <div class="article-meta">
+      <span class="article-meta__item">{{ status }}</span>
+      <span class="article-meta__item">{{ created }}</span>
+    </div>
+    <p class="build-description">{{ description }}</p>
+
+    <div class="build-links">
+      {{ live_link }}
+      {{ repo_link }}
+    </div>
+
+    <div class="build-stack">
+      {{ stack }}
+    </div>
+  </header>
+
+  <div class="article-body">
+    {{ content }}
+  </div>
+</article>
+{% endblock %}

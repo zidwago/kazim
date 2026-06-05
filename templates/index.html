@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="home-section">
+  <h2 class="home-section__title">Currently</h2>
+  <p class="currently-text">
+    <!-- REPLACE: Hand-written paragraph describing what you're working on right now.
+         Update this whenever your focus shifts. -->
+    Working through Hegel's <em>Science of Logic</em> alongside Beiser's Routledge introduction.
+    Beginning to survey the philosophy of AI literature — reading Müller, Sambrotta, and Amodei.
+    Revisiting Leibniz's modal metaphysics. Interested in how genealogical method bears on
+    the question of whether historical origins matter to philosophical justification.
+  </p>
+</section>
+
+<section class="home-section">
+  <h2 class="home-section__title">Active Research</h2>
+  {{ research }}
+</section>
+
+<section class="home-section">
+  <h2 class="home-section__title">Recent Writing</h2>
+  {{ recent_essays }}
+</section>
+
+<section class="home-section">
+  <h2 class="home-section__title">Currently Reading</h2>
+  {{ current_reading }}
+</section>
+
+<section class="home-section">
+  <h2 class="home-section__title">Projects</h2>
+  {{ projects }}
+  <p class="home-section__more"><a href="{{ base_path }}/projects/">All projects →</a></p>
+</section>
+
+<section class="home-section">
+  <h2 class="home-section__title">Oddities &amp; Rarities</h2>
+  {{ oddities }}
+  <p class="home-section__more"><a href="{{ base_path }}/oddities/">More →</a></p>
+</section>
+{% endblock %}

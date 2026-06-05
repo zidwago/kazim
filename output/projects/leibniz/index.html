@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leibniz — Kazim</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script>
+    // Apply theme before render to prevent flash
+    (function(){
+      var t = localStorage.getItem('kazim-theme') ||
+              (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a href="/" class="site-title">Kazim</a>
+          <span class="site-subtitle">a public research notebook</span>
+        </div>
+        <nav class="site-nav">
+          <a href="/essays/">essays</a>
+          <a href="/reading/">reading</a>
+          <a href="/projects/">projects</a>
+          <a href="/changelog/">changelog</a>
+        </nav>
+      </div>
+    </header>
+
+    <button class="theme-toggle">dark mode</button>
+
+    <main>
+      <article>
+  <header class="article-header">
+    <h1>Leibniz</h1>
+    <div class="article-meta">
+      <span class="article-meta__item"><span class="badge badge--active">active</span></span>
+      <span class="article-meta__item">16/04/2025</span>
+    </div>
+    <p class="section-header__description">Continuing engagement with Leibniz's primary texts and secondary literature, developing original interpretive work on incommensurables and modal metaphysics.</p>
+  </header>
+
+  <div class="article-body">
+    <h2 id="background">Background</h2>
+<p>I have read the majority of the texts found in <em>Philosophical Texts</em> (Oxford) and <em>Philosophical Essays</em> (Hackett). I have discussed Leibniz&rsquo;s metaphysics in a short general paper and written a longer paper on Leibniz&rsquo;s use of incommensurables as it applies to his metaphysics.</p>
+<h2 id="secondary-literature-engaged">Secondary Literature Engaged</h2>
+<ul>
+<li>&ldquo;Leibniz&rsquo;s Modal Metaphysics&rdquo; — read closely</li>
+<li>&ldquo;Leibniz&rsquo;s Exoteric Philosophy&rdquo; — read closely</li>
+<li>Nicholas Jolley, <em>Leibniz</em> (Routledge) — currently working through</li>
+<li><em>The Oxford Handbook of Leibniz</em> — currently working through</li>
+</ul>
+<h2 id="current-directions">Current Directions</h2>
+<p>I am looking to develop a new line of research going deeper into the Leibniz literature. The incommensurables thread is potentially something I might explore further, but I want to see what emerges from the secondary literature I&rsquo;m currently engaging with.</p>
+<p>A Spinoza pairing is also of interest — reading Leibniz and Spinoza together as interlocutors within the rationalist tradition, each pressing the other&rsquo;s commitments in productive ways.</p>
+
+    <h3>Essays</h3>
+<ul class="content-list">
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/essays/leibniz-incommensurables/">Leibniz and the Use of Incommensurables</a></span>
+  <span class="content-list__meta"><span class="badge badge--growing">growing</span> 2025-03-22</span>
+</li>
+</ul>
+
+    
+  </div>
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Kazim Sherazee. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</span>
+      <span><a href="/oddities/">oddities &amp; rarities</a> · <a href="/changelog/">changelog</a></span>
+    </footer>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

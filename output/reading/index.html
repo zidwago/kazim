@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading Log — Kazim</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script>
+    // Apply theme before render to prevent flash
+    (function(){
+      var t = localStorage.getItem('kazim-theme') ||
+              (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a href="/" class="site-title">Kazim</a>
+          <span class="site-subtitle">a public research notebook</span>
+        </div>
+        <nav class="site-nav">
+          <a href="/essays/">essays</a>
+          <a href="/reading/">reading</a>
+          <a href="/projects/">projects</a>
+          <a href="/changelog/">changelog</a>
+        </nav>
+      </div>
+    </header>
+
+    <button class="theme-toggle">dark mode</button>
+
+    <main>
+      <div class="section-header">
+  <h1>Reading Log</h1>
+  <p class="section-header__description"></p>
+</div>
+
+<ul class="content-list">
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/reading/hegel-science-of-logic/">Science of Logic</a> — G.W.F. Hegel</span>
+  <span class="content-list__meta">close reading</span>
+  
+</li>
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/reading/sambrotta-llms-space-of-reasons/">LLMs and the Logical Space of Reasons</a> — Mirco Sambrotta</span>
+  <span class="content-list__meta">consulted</span>
+  
+</li>
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/reading/sauer-end-of-history/">The End of History</a> — Hanno Sauer</span>
+  <span class="content-list__meta"><span class="badge badge--completed">completed</span> read</span>
+  
+</li>
+</ul>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Kazim Sherazee. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</span>
+      <span><a href="/oddities/">oddities &amp; rarities</a> · <a href="/changelog/">changelog</a></span>
+    </footer>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

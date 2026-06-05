@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philosophy of AI — Kazim</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script>
+    // Apply theme before render to prevent flash
+    (function(){
+      var t = localStorage.getItem('kazim-theme') ||
+              (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a href="/" class="site-title">Kazim</a>
+          <span class="site-subtitle">a public research notebook</span>
+        </div>
+        <nav class="site-nav">
+          <a href="/essays/">essays</a>
+          <a href="/reading/">reading</a>
+          <a href="/projects/">projects</a>
+          <a href="/changelog/">changelog</a>
+        </nav>
+      </div>
+    </header>
+
+    <button class="theme-toggle">dark mode</button>
+
+    <main>
+      <article>
+  <header class="article-header">
+    <h1>Philosophy of AI</h1>
+    <div class="article-meta">
+      <span class="article-meta__item"><span class="badge badge--active">active</span></span>
+      <span class="article-meta__item">16/04/2025</span>
+    </div>
+    <p class="section-header__description">Surveying the philosophy of artificial intelligence literature and working through foundational papers, with an eye toward developing a philosophical perspective on large language models.</p>
+  </header>
+
+  <div class="article-body">
+    <h2 id="current-state">Current State</h2>
+<p>This project is in its earliest stages. I am surveying the field — reading broadly to understand the landscape before committing to a specific line of inquiry.</p>
+<p>My entry point is the question of what LLMs are doing when they produce language. This is not primarily an ethics question (though ethics is never fully separable), but a question about reasoning, meaning, and the normative structure of language use.</p>
+<h2 id="reading-pipeline">Reading Pipeline</h2>
+<p>Papers I have scanned and will be exploring further:</p>
+<ul>
+<li>Vincent C. Müller, &ldquo;Philosophy of AI: A Structured Overview&rdquo; (Cambridge Handbook on the Law, Ethics and Policy of AI)</li>
+<li>Vincent C. Müller, &ldquo;Ethics of Artificial Intelligence and Robotics&rdquo; (Stanford Encyclopedia)</li>
+<li>Adam Pease, &ldquo;Ontology and Information Systems&rdquo; (Stanford Encyclopedia)</li>
+<li>&ldquo;Philosophy of Technology&rdquo; (Stanford Encyclopedia)</li>
+<li>Dario Amodei, &ldquo;The Adolescence of Technology&rdquo;</li>
+<li>Mirco Sambrotta, &ldquo;LLMs and the Logical Space of Reasons&rdquo; — particularly promising; seems to connect AI with the Pittsburgh school (Sellars, Brandom)</li>
+</ul>
+<h2 id="open-directions">Open Directions</h2>
+<p>I don&rsquo;t yet know where this project will lead. Some possibilities:</p>
+<ul>
+<li>A close reading of Sambrotta&rsquo;s paper, developing or critiquing his use of Brandom</li>
+<li>An essay on what Leibniz&rsquo;s concept of <em>expression</em> might offer the philosophy of AI</li>
+<li>A more general piece on why philosophy of language (rather than philosophy of mind) might be the right framework for thinking about LLMs</li>
+</ul>
+
+    <h3>Essays</h3>
+<ul class="content-list">
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/essays/philosophy-and-ai/">What Can Philosophy Say About Artificial Intelligence?</a></span>
+  <span class="content-list__meta"><span class="badge badge--seed">seed</span> 2025-04-10</span>
+</li>
+</ul>
+
+    <h3>Reading</h3>
+<ul class="content-list">
+<li class="content-list__item">
+  <span class="content-list__title"><a href="/reading/sambrotta-llms-space-of-reasons/">LLMs and the Logical Space of Reasons</a> — Mirco Sambrotta</span>
+  <span class="content-list__meta">consulted · reading</span>
+</li>
+</ul>
+
+  </div>
+</article>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Kazim Sherazee. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</span>
+      <span><a href="/oddities/">oddities &amp; rarities</a> · <a href="/changelog/">changelog</a></span>
+    </footer>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
