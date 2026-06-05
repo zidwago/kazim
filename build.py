@@ -22,8 +22,8 @@ from datetime import datetime
 from pathlib import Path
 
 # --- Configuration ---
-SITE_TITLE = "Kazim"
-SITE_SUBTITLE = "a public research notebook"
+SITE_TITLE = "Kazim Sherazee"
+SITE_SUBTITLE = ""
 SITE_URL = "https://zidwago.github.io/kazim"
 BASE_PATH = os.environ.get('KAZIM_BASE_PATH', '/kazim')  # '' for local dev
 BASE_DIR = Path(__file__).parent
